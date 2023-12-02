@@ -1,15 +1,15 @@
 ﻿using FleetFlow.Domain.Abstraction;
 
-namespace FleetFlow.Domain.Entities
-{
-    public class Brand : Entity<Guid>
-    {
-        public string Name { get; set; }
-        public List<Car> Cars { get; set; }
+namespace FleetFlow.Domain.Entities;
 
-        public Brand(Guid id, string name) : base(id)
-        {
-            Name = name;
-        }
+public class Brand : Entity<Guid>
+{
+    public string Name { get; set; }
+    public List<Car> Cars { get; set; }
+
+    public Brand() {}
+    public Brand(Guid id, string name) : base(id)
+    {
+        Name = name;
     }
 }

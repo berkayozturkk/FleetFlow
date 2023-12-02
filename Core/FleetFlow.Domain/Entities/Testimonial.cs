@@ -9,6 +9,7 @@ namespace FleetFlow.Domain.Entities
         public string Comment { get; set; }
         public string ImageUrl { get; set; }
 
+        public Testimonial() {}
         public Testimonial(Guid id, string name, string title,
             string comment, string imageUrl) : base()
         {

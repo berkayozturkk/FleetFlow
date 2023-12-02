@@ -1,0 +1,6 @@
+@FleetFlow.WebApi_HostAddress = http://localhost:5211
+
+GET {{FleetFlow.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
